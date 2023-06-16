@@ -45,7 +45,7 @@ services:
     #  - CHOKIDAR_USEPULLING=true
     #  - PROXY_PASSWORD='/run/secrets/proxy_password'
     depends_on:
-     - "jointjs"
+     - "motion-canvas"
 
   nginx:
     build:
@@ -126,9 +126,9 @@ services:
     ports:
       - "3306:3306"
 
-  jointjs:
+  motion-canvas:
     build:
-      context: ./jointjs
+      context: ./motion-canvas
       dockerfile: Dockerfile.prod
       args: # from env_file
         UNIQUE_NAMESPACE: ${UNIQUE_NAMESPACE}
@@ -140,7 +140,7 @@ services:
         PROXY_PORT: ${PROXY_PORT}
     env_file:
       - .env     
-    container_name: ${UNIQUE_NAMESPACE}-jointjs-prod
+    container_name: ${UNIQUE_NAMESPACE}-motion-canvas-prod
     security_opt:
       - no-new-privileges:true
     privileged: true
