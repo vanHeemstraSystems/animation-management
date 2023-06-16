@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Map - Management](README.md)
+* [Animation - Management](README.md)
