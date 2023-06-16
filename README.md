@@ -13,6 +13,8 @@ Based on "How to Run PostgreSQL and pgAdmin Using Docker" at https://towardsdata
 
 Based on "Motion Canvas" at https://github.com/motion-canvas
 
+Based on "Remotion" at https://www.remotion.dev/
+
 Create yarn.lock file as follows:
 
 ```
